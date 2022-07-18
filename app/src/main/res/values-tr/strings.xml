@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">RoomDB ve Firestore ile Öğrenci Notu Girişi</string>
+    <string name="Authentication">Kimlik Doğrulama</string>
+    <string name="signUp">Kayıt ol</string>
+    <string name="emailAddress">Eposta Adresi</string>
+    <string name="password">Parola</string>
+    <string name="userName">Kullanıcı Adı</string>
+    <string name="returnToSignIn">Giriş yap sayfasına geri dön</string>
+    <string name="signIn">Giriş Yap</string>
+    <string name="lessonCode">Ders Kodu</string>
+    <string name="lessonName">Ders Adı</string>
+    <string name="lessonMidtermExam">Vize Sınavı</string>
+    <string name="lessonFinalExam">Final Sınavı</string>
+    <string name="averageGrade">Sınav ortalaması</string>
+    <string name="save">Kaydet</string>
+    <string name="studentFullName">Ad Soyad</string>
+    <string name="department">Bölüm</string>
+    <string name="add_student">Öğrenci Ekle</string>
+    <string name="wellcome">Hoş Geldiniz</string>
+    <string name="please_wait">Lütfen Bekleyiniz</string>
+    <string name="lessonList">Ders Listesi</string>
+    <string name="student_List">Öğrenci Listesi</string>
+    <string name="download_data">Verileri indir</string>
+    <string name="delete_process">Silme işlemi</string>
+    <string name="alert_button_no">Hayır</string>
+    <string name="failed_to_delete">Silme işlemi yapılmadı</string>
+    <string name="alert_button_yes">Evet</string>
+    <string name="lesson_deleted">Ders silindi</string>
+    <string name="alert_delete_message">Dersi silmek istediğine emin misin?</string>
+    <string name="delete">Sil</string>
+    <string name="edit">Düzenle</string>
+    <string name="delete_icon">Silme ikonu</string>
+    <string name="edit_icon">Düzenle ikonu</string>
+    <string name="all_fields_filled">Tüm alanlar dolu olmalı</string>
+    <string name="update">Güncelle</string>
+    <string name="password_and_email_incorrrect">Parola veya email adresi hatalı</string>
+
+
+</resources>

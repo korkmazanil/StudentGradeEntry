@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/studentsListFragment">
+
+    <fragment
+        android:id="@+id/studentsListFragment"
+        android:name="com.korkmazanil.studentgradeentrywithroomdbandfirestore.view.fragment.StudentsListFragment"
+        android:label="Student List"
+        tools:layout="@layout/fragment_students_list">
+        <action
+            android:id="@+id/toLessonsListFragment"
+            app:destination="@id/lessonsListFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/toAddStudentFragment"
+            app:destination="@id/addStudentFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/lessonsListFragment"
+        android:name="com.korkmazanil.studentgradeentrywithroomdbandfirestore.view.fragment.LessonsListFragment"
+        android:label="Lessons List"
+        tools:layout="@layout/fragment_lessons_list" >
+        <action
+            android:id="@+id/toAddLessonFragment"
+            app:destination="@id/addLessonFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <argument
+            android:name="studentObject"
+            app:argType="com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Student"
+           />
+
+        <action
+            android:id="@+id/action_lessonsListFragment_to_studentsListFragment"
+            app:destination="@id/studentsListFragment"
+            app:popUpTo="@id/studentsListFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_lessonsListFragment_to_addLessonFragment"
+            app:destination="@id/addLessonFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.korkmazanil.studentgradeentrywithroomdbandfirestore.view.fragment.AddStudentFragment"
+        android:label="Add Student"
+        tools:layout="@layout/fragment_add_student" >
+        <action
+            android:id="@+id/toStudentsListFragment"
+            app:destination="@id/studentsListFragment"
+            app:popUpTo="@id/studentsListFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addLessonFragment"
+        android:name="com.korkmazanil.studentgradeentrywithroomdbandfirestore.view.fragment.AddLessonFragment"
+        android:label="Add Lesson" >
+        <action
+            android:id="@+id/addLessonFragmentToLessonsListFragment"
+            app:destination="@id/lessonsListFragment"
+            app:popUpTo="@id/lessonsListFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <argument
+            android:name="studentObject"
+            app:argType="com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Student" />
+        <argument
+            android:name="lessonObject"
+            app:argType="com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Lesson" />
+        <argument
+            android:name="updateButtonClick"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

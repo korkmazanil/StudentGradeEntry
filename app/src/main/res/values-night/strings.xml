@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Student Grade Entry with RoomDB And Firestore</string>
+    <string name="Authentication">Authentication</string>
+    <string name="signUp">Sign Up</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="userName">User Name</string>
+    <string name="returnToSignIn">Return to Sign In</string>
+    <string name="signIn">Sign In</string>
+    <string name="lessonCode">Lesson Code</string>
+    <string name="lessonName">Lesson Name</string>
+    <string name="lessonMidtermExam">Midterm Exam</string>
+    <string name="lessonFinalExam">Final Exam</string>
+    <string name="averageGrade">Average Grade</string>
+    <string name="save">Save</string>
+    <string name="studentFullName">Full Name</string>
+    <string name="department">Department</string>
+    <string name="add_student">Add Student</string>
+    <string name="wellcome">Wellcome</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="delete_icon">Delete Icon</string>
+    <string name="edit_icon">Edit Icon</string></resources>

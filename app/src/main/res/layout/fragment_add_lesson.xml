@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.fragment.AddLessonFragment"
+        android:background="@color/item_color"
+        >
+
+        <EditText
+            android:id="@+id/lessonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/lessonName"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/lessonMideTermExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/lessonMidtermExam"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/lessonName"
+            app:layout_constraintStart_toStartOf="@+id/lessonName"
+            app:layout_constraintTop_toBottomOf="@+id/lessonName" />
+
+        <EditText
+            android:id="@+id/lessonFinalExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/lessonFinalExam"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/lessonMideTermExam"
+            app:layout_constraintStart_toStartOf="@+id/lessonMideTermExam"
+            app:layout_constraintTop_toBottomOf="@+id/lessonMideTermExam" />
+
+        <Button
+            android:id="@+id/btnAddLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/lessonFinalExam"
+            app:layout_constraintStart_toStartOf="@+id/lessonFinalExam"
+            app:layout_constraintTop_toBottomOf="@+id/lessonFinalExam" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

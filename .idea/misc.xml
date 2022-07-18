@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_add.xml" value="0.1745" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_baseline_menu_48.xml" value="0.1825" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_dowload_24.xml" value="0.1825" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_download_data_24dp.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_edit_24.xml" value="0.1825" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1745" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_white_color_back_24dp.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_white_color_delete_24.xml" value="0.1825" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/activity_sign_in.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/fragment_add_lesson.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/fragment_add_student.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/fragment_lessons_list.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/fragment_students_list.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/lessons_list_row.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/students_list_row.xml" value="0.176" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-v23/students_list_row.xml" value="0.17028985507246377" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/activity_sign_in.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/activity_sign_up.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/fragment_add_lesson.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/fragment_add_student.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/fragment_lessons_list.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/fragment_students_list.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/lessons_list_row.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xhdpi/students_list_row.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/activity_sign_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/fragment_add_lesson.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/fragment_add_student.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/fragment_students_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/lessons_list_row.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxhdpi/students_list_row.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/activity_main.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/activity_sign_in.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/activity_sign_up.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/fragment_add_lesson.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/fragment_add_student.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/fragment_lessons_list.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/fragment_students_list.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/lessons_list_row.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-xxxhdpi/students_list_row.xml" value="0.190625" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/dialog_alert.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/dialog_progress.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_add_lesson.xml" value="0.176" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_add_student.xml" value="0.152" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_firebase_auth.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_lessons_list.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_students_list.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/lessons_list_row.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/students_list_row.xml" value="0.72" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/menu/lesson_list_fragment_menu.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/menu/lessons_list_menu.xml" value="0.8" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
