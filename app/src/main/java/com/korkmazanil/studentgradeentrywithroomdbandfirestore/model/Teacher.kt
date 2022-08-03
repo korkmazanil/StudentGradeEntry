@@ -4,9 +4,9 @@ import com.google.firebase.Timestamp
 import java.io.Serializable
 
 data class Teacher(
-    val teacherId : String,
-    val teacherName : String,
-    val teacherEmailAddress : String,
-    val teacherRegisteredTime: Timestamp
+    var teacherId : String,
+    var teacherName : String,
+    var teacherEmailAddress : String,
+    var teacherRegisteredTime: Timestamp
 ) : Serializable
 

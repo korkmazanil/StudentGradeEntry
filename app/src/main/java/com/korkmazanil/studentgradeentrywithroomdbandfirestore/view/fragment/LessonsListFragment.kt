@@ -2,8 +2,9 @@ package com.korkmazanil.studentgradeentrywithroomdbandfirestore.view.fragment
 
 import android.os.Bundle
 import android.view.*
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.findFragment
 import androidx.fragment.app.viewModels
@@ -11,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.FirestoreClass
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.GradeApplication
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.R
@@ -65,10 +67,38 @@ class LessonsListFragment : BaseFragment(), LessonAdapter.OnItemClickListener {
             Navigation.findNavController(requireView()).navigate(addLesson)
         }
 
-        binding.fabGetStudentsByLesson.setOnClickListener {
-            FirestoreClass().getStudentsByLesson(view.findFragment(),"A")
-        }
         observeLiveData(view)
+    }
+
+    fun toggleBottomSheet(view: View, position: Int) {
+
+        val bottomSheetView = layoutInflater.inflate(R.layout.fragment_bottom_sheet,null)
+        val deleteButton = bottomSheetView.findViewById<Button>(R.id.deleteButton)
+        val editButton = bottomSheetView.findViewById<Button>(R.id.editButton)
+
+        val dialog = BottomSheetDialog(requireActivity(),R.style.BottomSheetDialogTheme)
+        dialog.setContentView(bottomSheetView)
+        dialog.show()
+
+        deleteButton.setOnClickListener{
+            val clickedItem = adapter.getLessonsList()[position]
+            showAlertDialog(clickedItem,position,adapter.getLessonsList())
+            dialog.dismiss()
+        }
+
+        editButton.setOnClickListener{
+            val clickedItem = adapter.getLessonsList()[position]
+            val goToEditStudent = LessonsListFragmentDirections
+                .toAddLessonFragment(args.studentObject,clickedItem,UPDATE_PROCESS)
+            Navigation.findNavController(view).navigate(goToEditStudent)
+
+            dialog.dismiss()
+        }
+//        filterButton.setOnClickListener{
+//            val filterText = bottomSheetView.findViewById<EditText>(R.id.filtreText).text.toString()
+//            FirestoreClass().getStudentsByLesson(view.findFragment(),filterText)
+//        }
+
     }
 
     private fun observeLiveData(view: View) {
@@ -104,6 +134,10 @@ class LessonsListFragment : BaseFragment(), LessonAdapter.OnItemClickListener {
                 .toAddLessonFragment(args.studentObject,clickedItem,UPDATE_PROCESS)
             Navigation.findNavController(view).navigate(goToEditStudent)
         }
+
+    override fun onCardViewClick(position: Int, view: View) {
+        toggleBottomSheet(view,position)
+    }
 
     private fun showAlertDialog(
         clickedItem: Lesson,

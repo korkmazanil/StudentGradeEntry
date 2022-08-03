@@ -7,10 +7,10 @@ import java.io.Serializable
 @Entity(tableName = "student_table")
 data class Student(
     @PrimaryKey
-    val studentId : String,
-    val studentFullName : String,
-    val studentDepartment : String,
-    val studentRegisteredTime : String
+    var studentId : String,
+    var studentFullName : String,
+    var studentDepartment : String,
+    var studentRegisteredTime : String
 ) : Serializable {
     companion object{
         const val FIELD_STUDENT_ID = "studentId"

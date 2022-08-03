@@ -50,19 +50,5 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:tint="@android:color/white" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabGetStudentsByLesson"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_margin="20dp"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="@color/editTextColor"
-                android:contentDescription="@string/add_student"
-                android:src="@drawable/ic_filter_24dp"
-                app:borderWidth="0dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/fabAddLesson"
-                app:layout_constraintStart_toEndOf="@+id/fabGetLessons"
-                app:tint="@android:color/white" />
       </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

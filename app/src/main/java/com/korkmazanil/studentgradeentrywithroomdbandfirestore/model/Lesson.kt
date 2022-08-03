@@ -8,15 +8,15 @@ import java.io.Serializable
 data class Lesson(
     @PrimaryKey
     var lessonId : String ="",
-    val lessonStudentId : String ="",
-    val lessonName : String="",
-    val lessonMidTermExam : String="",
-    val lessonFinalExam : String="",
+    var lessonStudentId : String ="",
+    var lessonName : String="",
+    var lessonMidTermExam : String="",
+    var lessonFinalExam : String="",
     var lessonAverageGrade : String="",
 
-    val studentFullName : String=""
+    var studentFullName : String=""
 
-    ) : Serializable{
+) : Serializable{
 
     companion object{
         const val FIELD_LESSON_ID = "lessonId"

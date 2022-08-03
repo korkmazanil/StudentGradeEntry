@@ -34,5 +34,16 @@
     <string name="all_fields_filled">All fields must be filled</string>
     <string name="update">Update</string>
     <string name="password_and_email_incorrrect">The password or email address is incorrect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+<!--    <string-array name="Lessons">-->
+<!--        <item>-&#45;&#45;&#45;&#45;&#45;&#45;</item>-->
+<!--        <item>Java</item>-->
+<!--        <item>Kotlin</item>-->
+<!--        <item>Swift</item>-->
+<!--        <item>Python</item>-->
+<!--        <item>Scala</item>-->
+<!--        <item>Perl</item>-->
+<!--    </string-array>-->
 
 </resources>

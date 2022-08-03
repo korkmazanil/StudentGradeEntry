@@ -17,6 +17,7 @@ class LessonAdapter(
     interface OnItemClickListener {
         fun onDeleteIconClick(position: Int,view: View)
         fun onEditIconClick(position: Int,view: View)
+        fun onCardViewClick(position: Int, view: View)
     }
 
 
@@ -46,6 +47,12 @@ class LessonAdapter(
                 imageViewEdit.id ->{
                     if (position != RecyclerView.NO_POSITION){
                         listener.onEditIconClick(position,v)
+                    }
+                }
+
+                view.id ->{
+                    if (position != RecyclerView.NO_POSITION){
+                        listener.onCardViewClick(position,v)
                     }
                 }
             }

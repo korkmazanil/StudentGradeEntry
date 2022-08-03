@@ -11,13 +11,13 @@ interface LessonDao {
     suspend fun insert(lesson: Lesson)
 
     @Delete
-    suspend fun deleteSelectLesson(lesson: Lesson)
+    suspend fun deleteSelectLesson(lesson: Lesson) : Int
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Update
     suspend fun update(lesson: Lesson)
 
     @Transaction
-    @Query("DELETE FROM student_table")
+    @Query("DELETE FROM lesson_table")
     suspend fun deleteAllLessons()
 
     @Transaction
