@@ -3,15 +3,20 @@ package com.korkmazanil.studentgradeentrywithroomdbandfirestore.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.R
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Lesson
+import java.util.*
+import kotlin.collections.ArrayList
 
 class LessonAdapter(
-    private val lessonList : ArrayList<Lesson>,
-    private var listener : OnItemClickListener
+    private var lessonList : ArrayList<Lesson>,
+    private var listener : OnItemClickListener,
+
     ): RecyclerView.Adapter<LessonAdapter.LessonViewHolder>() {
 
     interface OnItemClickListener {
@@ -89,4 +94,5 @@ class LessonAdapter(
     fun getLessonsList() : ArrayList<Lesson>{
         return lessonList
     }
+
 }

@@ -8,14 +8,23 @@
     android:layout_height="match_parent"
     tools:context=".view.fragment.StudentsListFragment">
 
+        <SearchView
+            android:id="@+id/studentSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvStudentList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studentSearchView"
             tools:listitem="@layout/students_list_row" />
 
         <ProgressBar
@@ -53,6 +62,20 @@
             app:borderWidth="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:tint="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabFilter"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/editTextColor"
+            android:contentDescription="@string/add_student"
+            android:src="@drawable/ic_filter_24dp"
+            app:borderWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rvStudentList"
+            app:layout_constraintEnd_toStartOf="@+id/fabAddStudent"
+            app:layout_constraintStart_toEndOf="@+id/fabGetStudents"
             app:tint="@android:color/white" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -2,6 +2,7 @@ package com.korkmazanil.studentgradeentrywithroomdbandfirestore.dao
 
 import androidx.room.*
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Lesson
+import io.reactivex.Single
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -27,4 +28,7 @@ interface LessonDao {
     @Transaction
     @Query("SELECT *FROM lesson_table order by lessonName ASC")
     fun getStudentWithLessons() : Flow<List<Lesson>>
+
+//    @Query("SELECT * FROM lesson_table WHERE lessonName LIKE :search ")
+//    fun findLessonName(search: String): List<Lesson>
 }

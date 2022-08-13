@@ -14,4 +14,10 @@ class StudentRepository(private val studentDao: StudentDao) {
     suspend fun insert(student : Student){
         studentDao.insert(student)
     }
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    fun findStudentName(search : String) : Flow<List<Student>>{
+        return studentDao.findStudentName(search)
+    }
+
 }

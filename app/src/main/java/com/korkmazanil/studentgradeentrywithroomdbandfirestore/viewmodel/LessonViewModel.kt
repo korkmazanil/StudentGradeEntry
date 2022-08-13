@@ -4,6 +4,7 @@ import androidx.lifecycle.*
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Lesson
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.repository.LessonRepository
 import kotlinx.coroutines.launch
+import javax.annotation.Nullable
 
 class LessonViewModel(private val repository: LessonRepository) : ViewModel() {
 
@@ -25,6 +26,10 @@ class LessonViewModel(private val repository: LessonRepository) : ViewModel() {
     fun deleteSelectLesson(lesson: Lesson) = viewModelScope.launch {
         repository.deleteLesson(lesson)
     }
+
+//    fun findLessonName(search: String) = viewModelScope.launch {
+//        repository.findLessonName(search)
+//    }
 }
 
 class LessonViewModelFactory(private val repository: LessonRepository) : ViewModelProvider.Factory{

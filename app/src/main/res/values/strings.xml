@@ -34,6 +34,7 @@
     <string name="all_fields_filled">All fields must be filled</string>
     <string name="update">Update</string>
     <string name="password_and_email_incorrrect">The password or email address is incorrect</string>
+    <string name="Search">Search</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 <!--    <string-array name="Lessons">-->

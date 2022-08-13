@@ -13,6 +13,10 @@ class StudentViewModel(private val repository: StudentRepository):ViewModel() {
     fun insert(student: Student) = viewModelScope.launch {
         repository.insert(student)
     }
+
+    fun searchStudentName(search : String) : LiveData<List<Student>>{
+        return repository.findStudentName(search).asLiveData()
+    }
 }
 
 class StudentViewModelFactory(private val repository: StudentRepository) : ViewModelProvider.Factory{

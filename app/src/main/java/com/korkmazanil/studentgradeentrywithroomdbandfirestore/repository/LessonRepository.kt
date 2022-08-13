@@ -33,4 +33,11 @@ class LessonRepository(private val lessonDao: LessonDao) {
     suspend fun  deleteLesson(lesson: Lesson){
         lessonDao.deleteSelectLesson(lesson)
     }
+
+//    @Suppress("RedundantSuspendModifier")
+//    @WorkerThread
+//    suspend fun  findLessonName(search: String){
+//        lessonDao.findLessonName(search)
+//    }
+
 }

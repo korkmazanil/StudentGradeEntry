@@ -11,7 +11,8 @@ import com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Student
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.view.fragment.StudentsListFragmentDirections
 
 class StudentAdapter(
-    private val studentList : List<Student>,
+    private var studentList : List<Student>
+
     ): RecyclerView.Adapter<StudentAdapter.StudentViewHolder>(){
 
     class StudentViewHolder(var view : View) : RecyclerView.ViewHolder(view) {
@@ -47,4 +48,10 @@ class StudentAdapter(
     override fun getItemCount(): Int {
         return studentList.size
     }
+
+    fun setData(newData : List<Student>){
+        studentList = newData
+        notifyDataSetChanged()
+    }
+
 }

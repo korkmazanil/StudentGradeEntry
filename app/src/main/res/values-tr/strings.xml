@@ -34,7 +34,7 @@
     <string name="all_fields_filled">Tüm alanlar dolu olmalı</string>
     <string name="update">Güncelle</string>
     <string name="password_and_email_incorrrect">Parola veya email adresi hatalı</string>
-
+    <string name="Search">Search</string>
 
 
 </resources>

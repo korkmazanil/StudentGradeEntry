@@ -1,9 +1,12 @@
 package com.korkmazanil.studentgradeentrywithroomdbandfirestore.view.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SearchView
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.findFragment
 import androidx.fragment.app.viewModels
@@ -20,7 +23,6 @@ import com.korkmazanil.studentgradeentrywithroomdbandfirestore.GradeApplication
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.R
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.adapter.StudentAdapter
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.databinding.FragmentStudentsListBinding
-import com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Lesson
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Student
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.viewmodel.StudentViewModel
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.viewmodel.StudentViewModelFactory
@@ -34,8 +36,11 @@ class StudentsListFragment : BaseFragment() {
     private lateinit var db : FirebaseFirestore
     private lateinit var auth : FirebaseAuth
     private lateinit var studentList : ArrayList<Student>
+    private lateinit var adapter : StudentAdapter
 
-    private val studentViewModel: StudentViewModel by viewModels {
+    private lateinit var searchStudentList: ArrayList<Student>
+
+            private val studentViewModel: StudentViewModel by viewModels {
         StudentViewModelFactory((activity?.application as GradeApplication).studentRepository)
     }
 
@@ -44,6 +49,7 @@ class StudentsListFragment : BaseFragment() {
         db = Firebase.firestore
         auth = Firebase.auth
         studentList = ArrayList()
+        searchStudentList = ArrayList()
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -53,7 +59,36 @@ class StudentsListFragment : BaseFragment() {
         binding.rvStudentList.layoutManager = LinearLayoutManager(context)
         binding.rvStudentList.setHasFixedSize(true)
 
+        binding.studentSearchView.let {
+            it.clearFocus()
+            it.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+                override fun onQueryTextSubmit(p0: String?): Boolean {
+                    return false
+                }
+
+                override fun onQueryTextChange(p0: String?): Boolean {
+                    if (p0 != null){
+                        searchStudentName(p0)
+                    }
+                    return true
+                }
+            })
+        }
+
         return binding.root
+    }
+
+    private fun searchStudentName(search: String) {
+
+        val searchQuery = "%$search%"
+        studentViewModel.searchStudentName(searchQuery).observe(viewLifecycleOwner, Observer { list->
+
+            list.let {
+                val adapter = StudentAdapter(it)
+                adapter.setData(it)
+                binding.rvStudentList.adapter = adapter
+            }
+        })
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -64,6 +99,14 @@ class StudentsListFragment : BaseFragment() {
                 StudentsListFragmentDirections.toAddStudentFragment()
 
             Navigation.findNavController(requireView()).navigate(fabAddLesson)
+        }
+
+        binding.fabFilter.setOnClickListener {
+            if (binding.studentSearchView.visibility == View.GONE){
+                binding.studentSearchView.visibility = View.VISIBLE
+            }else{
+                binding.studentSearchView.visibility = View.GONE
+            }
         }
         observeLiveData(view)
     }

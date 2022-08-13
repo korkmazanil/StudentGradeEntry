@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.*
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.findFragment
 import androidx.fragment.app.viewModels
@@ -23,7 +22,7 @@ import com.korkmazanil.studentgradeentrywithroomdbandfirestore.utils.Constants.U
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.viewmodel.LessonViewModel
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.viewmodel.LessonViewModelFactory
 
-class LessonsListFragment : BaseFragment(), LessonAdapter.OnItemClickListener {
+class LessonsListFragment : BaseFragment(), LessonAdapter.OnItemClickListener{
 
     private lateinit var binding : FragmentLessonsListBinding
 
@@ -50,6 +49,7 @@ class LessonsListFragment : BaseFragment(), LessonAdapter.OnItemClickListener {
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_lessons_list,container,false)
         binding.rvLessonList.layoutManager = LinearLayoutManager(context)
         binding.rvLessonList.setHasFixedSize(true)
+
         return binding.root
     }
 
@@ -66,7 +66,6 @@ class LessonsListFragment : BaseFragment(), LessonAdapter.OnItemClickListener {
                 )
             Navigation.findNavController(requireView()).navigate(addLesson)
         }
-
         observeLiveData(view)
     }
 

@@ -1,5 +1,6 @@
 package com.korkmazanil.studentgradeentrywithroomdbandfirestore.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.korkmazanil.studentgradeentrywithroomdbandfirestore.model.Student
 import kotlinx.coroutines.flow.Flow
@@ -15,10 +16,13 @@ interface StudentDao {
     suspend fun deleteAllStudents()
 
     @Transaction
-    @Query("SELECT *FROM student_table order by studentFullName ASC")
+    @Query("SELECT *FROM student_table ORDER BY studentFullName ASC")
     fun getAlpabetizeStudents() : Flow<List<Student>>
 
     @Transaction
-    @Query("SELECT *FROM student_table order by studentRegisteredTime ASC")
+    @Query("SELECT *FROM student_table ORDER BY studentRegisteredTime ASC")
     fun getCurrentTimeStudents() : Flow<List<Student>>
+
+    @Query("SELECT *FROM student_table WHERE studentFullName LIKE :search")
+    fun findStudentName(search : String) : Flow<List<Student>>
 }

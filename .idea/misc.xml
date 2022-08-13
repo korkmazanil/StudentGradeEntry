@@ -10,6 +10,7 @@
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_download_data_24dp.xml" value="0.1" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_edit_24.xml" value="0.1825" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1745" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_search_24.xml" value="0.215" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_white_color_back_24dp.xml" value="0.1" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/drawable/ic_white_color_delete_24.xml" value="0.1825" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout-hdpi/activity_main.xml" value="0.25416666666666665" />
@@ -58,12 +59,13 @@
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_add_student.xml" value="0.152" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.2567049808429119" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_firebase_auth.xml" value="0.2" />
-        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_lessons_list.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_lessons_list.xml" value="0.1" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/fragment_students_list.xml" value="0.1" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/lessons_list_row.xml" value="0.264" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/layout/students_list_row.xml" value="0.72" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/menu/lesson_list_fragment_menu.xml" value="0.1" />
         <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/menu/lessons_list_menu.xml" value="0.8" />
+        <entry key="..\:/AndroidStudioKotlinProjects/StudentGradeEntrywithRoomDBAndFirestore/app/src/main/res/menu/toolbar_search_menu.xml" value="0.2" />
       </map>
     </option>
   </component>
