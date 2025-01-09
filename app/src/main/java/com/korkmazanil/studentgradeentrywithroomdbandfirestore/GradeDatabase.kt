@@ -51,7 +51,7 @@ abstract class GradeDatabase : RoomDatabase() {
             super.onCreate(db)
             INSTANCE?.let { database->
                 scope.launch(Dispatchers.IO) {
-                    populateDatabase(database.studentDao, database.lessonDao)
+                    //populateDatabase(database.studentDao, database.lessonDao)
                 }
             }
         }
